@@ -1,35 +1,37 @@
 <p>
-    <i>( Describe task in general )</i>
-</p>
-
-<p>
-    Sum two passed ints
+    Nicola have built the semi-automatized painting system. But this system can paint only one side of the detail,
+    after it an operator must rotate the detail and start painting for the other side.
+    The painting process always ahs the same time. The camera can paint <strong>K</strong> details at one time.
+    Nicola wants to use Stephan for serving of the painting system. For it he should develop the algorithm for Stephan,
+    that allows to paint <strong>N</strong> (0 < N < 10) details for the shortest time.
 </p>
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <img class="for_info_only" title="system" src="{{MEDIA}}system.png" alt="system" width="430px"/>
+    <img class="for_editor_only" title="system" src="{{MEDIA}}system.png" alt="system" width="380px"/>
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    The details have numbers from 0 to 9. You are given capacity of the painting system (K) and quantity of details (N).
+    You should return the sequence of painting as a string, where each action is the numbers of the painted details.
+    Actions are separated by comma (",").
 </p>
 
+<p>
+    <strong>Input: </strong> Capacity of the painting system (K) and quantity of details (N). Integers.
+</p>
+
+<p>
+    <strong>Output: </strong> The sequence of actions, a string.
+</p>
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+checkio(2, 3) == "01,02,21"
     </pre>
 </div>
 
