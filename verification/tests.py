@@ -14,6 +14,11 @@ TESTS = {
             "input": [2, 3],
             "answer": [3, 2, 3]
         },
+        {
+            "input": [6, 3],
+            "answer": [6, 3, 3]
+        },
+
     ],
     "Extra": [
         {

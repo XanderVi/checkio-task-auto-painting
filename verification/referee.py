@@ -16,6 +16,7 @@ def checker(info, result):
         return False, "It can be shorter."
     details = [0 for _ in range(n)]
     good_ch = "".join(str(r) for r in range(n))
+    good_ch += ","
     if any(ch not in good_ch for ch in result):
         return False, "Wrong symbol in the result."
     for act in actions:
@@ -27,7 +28,7 @@ def checker(info, result):
         return False, "I see no painted details."
     if any(d > 2 for d in details):
         return False, "I see over painted details."
-    return False, "All ok"
+    return True, "All ok"
 
 
 api.add_listener(
