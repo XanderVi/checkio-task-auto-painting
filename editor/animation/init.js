@@ -144,7 +144,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
             var row = 5;
 
-            var moveTime = 700;
+            var moveTime = 500;
             var paintTime = 1000;
             var steptime = moveTime * 2 + paintTime + 100;
             var capacity;
