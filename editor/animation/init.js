@@ -197,6 +197,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                         if (isNaN(symb) || symb >= numb || symb < 0){
                             return false;
                         }
+                        if (acts[i].indexOf(symb) !== acts[i].lastIndexOf(symb)) {
+                            return false;
+                        }
                     }
                     if (acts[i].length > capacity) {
                         return false;

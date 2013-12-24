@@ -22,6 +22,8 @@ def checker(info, result):
     for act in actions:
         if len(act) > k:
             return False, "The system can contain {0} detail(s).".format(k)
+        if len(set(act)) < len(act):
+            return False, "You can not place one detail twice in one load"
         for ch in act:
             details[int(ch)] += 1
     if any(d < 2 for d in details):
