@@ -1,10 +1,12 @@
 <p>
-    Nicola has built a semi-automatized painting system. But this system can paint only one side of an item,
-    after it an operator must reload the item and start painting the other side (the system detects sides automatically).
-    The painting process always takes the same amount of time. The camera can paint <strong>K</strong> surfaces at a time.
-    Nicola wants Stephan to operate the painting system. That's why he should develop an algorithm for Stephan,
-    that allows him to paint <strong>N</strong> (0 < N &le; 10) surfaces in the shortest possible timeframe.
-    Be careful and don't load the item more than two times.
+   Nicola has built a semi-automatized painting system,
+    but this system can paint only one side of an item.
+    After that, an operator must reload the machine and paint the other side (the system detects painted sides automatically).
+    The painting process always takes the same amount of time.
+    The camera can paint K surfaces at a time.
+    Nicola wants Stephan to operate the painting machine and he needs to develop an algorithm for Stephan
+    which will allow him to paint N (0 < N ≤ 10) surfaces in the shortest possible timeframe.
+    Be careful that you don't paint the item more than two times.
 </p>
 
 <p style="text-align: center;">
@@ -13,9 +15,10 @@
 </p>
 
 <p>
-    The items have numbers from 0 to 9. You are given capacity of the painting system (K) and quantity of items (N).
-    You should return the sequence of painting as a string, where each action is the numbers of the painted items.
-    Actions are separated by comma (",").
+    The items are numbered from 0 to 9.
+    You are given the paint holding capacity of the machine (K) and the quantity of items (N).
+    You should return the sequence Stephen must paint as a string,
+    where each action is the numbers of painted items. Actions separated by comma (",").
 </p>
 
 <p>
@@ -42,8 +45,11 @@ checkio(2, 5)  # "01,01,23,42,34"
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    This is a rephrased and extended task about how to fry beefsteak with a pan.
-    But this concept can be a model of the real technological process on a factory.
+    This is similar to cooking two steaks in one pan.
+    Both steaks have two sides and it takes a minute to cook each side,
+    how would you cook both steaks in three minutes?
+    This task takes the concept and models it in a technical way.
+    The ideas behind the task also model real technological process in a factories.
 </p>
 
 
