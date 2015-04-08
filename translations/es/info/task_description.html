@@ -1,0 +1,27 @@
+<p>Nicola ha construido un sistema de pintura semi-autom&aacute;tica. Sin embargo, este sistema solo puede pintar un lado de un elemento, por lo que cada vez, es necesario que un operador recargue la m&aacute;quina y pinte el otro lado (el sistema detecta los lados pintados de forma autom&aacute;tica). El proceso de pintura siempre toma la misma cantidad de tiempo. La c&aacute;mara puede pintar K superficies a la vez. Nicola quiere que Stephan opere la m&aacute;quina de pintar y necesita desarrollar un algoritmo para Stephan que le permita pintar N (0 <n de="" dos="" el="" elemento="" en="" menor="" n:="" no="" p="" pintado="" posible.="" que="" s="" sea="" superficies="" tiempo="" veces.="" verificar=""> </n></p>
+
+<p style="text-align: center;"><img alt="system" class="for_info_only" src="{{MEDIA}}system.png" title="system" width="430px" /> <img alt="system" class="for_editor_only" src="{{MEDIA}}system.png" title="system" width="380px" /></p>
+
+<p>Los elementos se numeran de 0 a 9. Se te informar&aacute; la capacidad de almacenamiento de pintura de la m&aacute;quina (K) y la cantidad de art&iacute;culos (N) a pintar. Deber&aacute;s encontrar la secuencia que Stephen debe pintar como una cadena (str), donde cada acci&oacute;n es el n&uacute;mero de elementos pintados. Las acciones est&aacute;n separadas por comas (&quot;,&quot;).</p>
+
+<p><strong>Datos de Entrada: </strong> Capacidad del sistema de pintura y cantidad de art&iacute;culos a pintar, como enteros (int).</p>
+
+<p><strong>Salida: </strong> La secuencia de acciones, como una cadena (str).</p>
+
+<div class="for_info_only">
+<p><strong>Ejemplo:</strong></p>
+
+<pre class="brush: python">
+checkio(2, 3)  # &quot;01,12,02&quot;
+checkio(6, 3)  # &quot;012,012&quot;
+checkio(3, 6)  # &quot;012,012,345,345&quot;
+checkio(1, 4)  # &quot;0,0,1,1,2,2,3,3&quot;
+checkio(2, 5)  # &quot;01,01,23,42,34&quot;
+    </pre>
+</div>
+
+<p class="for_info_only"><strong>&iquest;C&oacute;mo se usa?: </strong> Esto es similar a cocinar tres bistecs en una sart&eacute;n con capacidad para dos. Todos los bistecs tienen dos lados y se tarda un minuto para cocinar un lado de los bistecs, &iquest;c&oacute;mo cocinar todos los filetes en tres minutos? Esta tarea utiliza este concepto y lo modela de una manera t&eacute;cnica. Las ideas detr&aacute;s de esta misi&oacute;n tambi&eacute;n pueden modelar un proceso tecnol&oacute;gico real en f&aacute;bricas.</p>
+
+<p><strong>Condiciones:</strong><br />
+0 &lt; capacidad &le; 10<br />
+0 &lt; n&uacute;mero de elementos &le; 10</p>
