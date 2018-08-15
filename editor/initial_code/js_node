@@ -1,0 +1,16 @@
+"use strict";
+
+function painting(capacity, number) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    // These "asserts" are used for self-checking and not for an auto-testing
+
+    assert.equal(painting(2, 3), "01,12,02")
+    assert.equal(painting(6, 3), "012,012")
+    assert.equal(painting(3, 6), "012,012,345,345")
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}

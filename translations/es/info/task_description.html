@@ -11,13 +11,23 @@
 <div class="for_info_only">
 <p><strong>Ejemplo:</strong></p>
 
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+painting(2, 3) == "01,12,02"
+painting(6, 3) == "012,012"
+painting(3, 6) == "012,012,345,345"
+painting(1, 4) == "0,0,1,1,2,2,3,3"
+painting(2, 5) == "01,01,23,42,34"
+</pre>
+{% else %}
 <pre class="brush: python">
-checkio(2, 3)  # &quot;01,12,02&quot;
-checkio(6, 3)  # &quot;012,012&quot;
-checkio(3, 6)  # &quot;012,012,345,345&quot;
-checkio(1, 4)  # &quot;0,0,1,1,2,2,3,3&quot;
-checkio(2, 5)  # &quot;01,01,23,42,34&quot;
-    </pre>
+painting(2, 3) == "01,12,02"
+painting(6, 3) == "012,012"
+painting(3, 6) == "012,012,345,345"
+painting(1, 4) == "0,0,1,1,2,2,3,3"
+painting(2, 5) == "01,01,23,42,34"
+</pre>
+{% endif %}
 </div>
 
 <p class="for_info_only"><strong>&iquest;C&oacute;mo se usa?: </strong> Esto es similar a cocinar tres bistecs en una sart&eacute;n con capacidad para dos. Todos los bistecs tienen dos lados y se tarda un minuto para cocinar un lado de los bistecs, &iquest;c&oacute;mo cocinar todos los filetes en tres minutos? Esta tarea utiliza este concepto y lo modela de una manera t&eacute;cnica. Las ideas detr&aacute;s de esta misi&oacute;n tambi&eacute;n pueden modelar un proceso tecnol&oacute;gico real en f&aacute;bricas.</p>

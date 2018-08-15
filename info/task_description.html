@@ -35,13 +35,23 @@
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
-checkio(2, 3)  # "01,12,02"
-checkio(6, 3)  # "012,012"
-checkio(3, 6)  # "012,012,345,345"
-checkio(1, 4)  # "0,0,1,1,2,2,3,3"
-checkio(2, 5)  # "01,01,23,42,34"
-    </pre>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+painting(2, 3) == "01,12,02"
+painting(6, 3) == "012,012"
+painting(3, 6) == "012,012,345,345"
+painting(1, 4) == "0,0,1,1,2,2,3,3"
+painting(2, 5) == "01,01,23,42,34"
+</pre>
+{% else %}
+<pre class="brush: python">
+painting(2, 3) == "01,12,02"
+painting(6, 3) == "012,012"
+painting(3, 6) == "012,012,345,345"
+painting(1, 4) == "0,0,1,1,2,2,3,3"
+painting(2, 5) == "01,01,23,42,34"
+</pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">
